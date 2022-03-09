@@ -1,0 +1,13 @@
+{%extends "home.html"%} {%block title%}Prediction Page{%endblock%} {%block
+    content%}
+    <div class="prediction">
+      {%if predicts =='0'%}
+      <h1>FRAUD NOT DETECTED</h1>
+      <p>No fraud has been detected in the machine learning model</p>
+
+      {%else%}
+      <h1>FRAUD</h1>
+      <p>Fraud detected in the machine learning model</p>
+      {%endif%}
+    </div>
+    {%endblock%}
